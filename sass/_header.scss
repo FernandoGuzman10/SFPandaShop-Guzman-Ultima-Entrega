@@ -1,0 +1,39 @@
+@import "variables";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: $colorPrincipal;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+
+        .content__search--bar{
+        background-color: white;
+        color: #d7d4d4;
+        width: 250px;
+        height: 30px;
+        border-radius: 15px;
+        }
+
+        .content__navbar li {
+        margin: 0 15px;
+        font-weight: lighter;
+        }
+
+        .content__navbar ul {
+        display: flex;
+        }
+        .header__content-tittle {
+        color: rgb(253, 253, 253);
+        font-size: 40px;
+        }
+        .header__content-icon {
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        }
+}
+
+
+

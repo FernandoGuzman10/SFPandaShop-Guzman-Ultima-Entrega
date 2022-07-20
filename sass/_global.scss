@@ -1,0 +1,52 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: $coloBackground;
+    position: relative;
+
+}
+/* FORMATOS DE TEXTO */
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+ p {
+    line-height: 1.8;
+    margin: 20px;
+    text-align: justify;
+    font-size: 25px;
+}
+h2 {
+    font-size: 30px;
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    border-style: none;
+}
+textarea {
+    border-radius: 10px;
+    border-style: none;
+}
+
+span {
+    display: none;
+}
