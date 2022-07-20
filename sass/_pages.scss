@@ -58,6 +58,23 @@
     font-weight: bold;
     }
 }
+
+.ubication__content-text3 {
+    font-size: 24px;
+    font-style: italic;
+}
+.ubication__content-text4 {
+    @extend .ubication__content-text3;
+    color: firebrick;
+}
+.ubication__content-text5 {
+    @extend .ubication__content-text3;
+    color: green;
+}
+
+
+
+
 /**********/
 
 /* ingressar */
@@ -126,10 +143,28 @@
                     font-size: 25px;
                     margin: 5px;
                 }
+                .user__form-link {
+                    background-color: rgb(70, 39, 39);
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 30px;
+                }
         }
+        
 }
 /*INFORMACION*/
-.text__content {
-    background-image: red;
-    padding: 3000px;
+@mixin text-base ($inline){
+    font-size: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: ($inline);
 }
+
+.text__content-paper {
+    @include text-base (center);
+}
+.text__content-tittle {
+    @include text-base(center);
+    font-weight: bold;
+}
+

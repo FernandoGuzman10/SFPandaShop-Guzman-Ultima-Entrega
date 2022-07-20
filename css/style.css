@@ -69,6 +69,17 @@ header {
     height: 30px;
     margin-left: 5px; }
 
+/*MEDIAS QUERIES*/
+@media (max-width: 1024px) {
+  .content__search label {
+    display: none; }
+  .header__content-tittle {
+    display: none; } }
+
+@media (max-width: 768px) {
+  header {
+    display: flex; } }
+
 /*  animacion banner  */
 .main__animation {
   background-image: linear-gradient(45deg, #c60606, black);
@@ -134,8 +145,43 @@ header {
     margin: 10px;
     font-size: 30px; }
   .formulario .media__video {
-    margin: 20px 200px;
+    height: 300px;
+    width: 600px;
+    margin: 20px 0px;
     border-radius: 10%; }
+
+@media (max-width: 1440px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .main__animation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .main__grid-video {
+    justify-items: center; }
+  .formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; } }
+
+@media (max-width: 1024px) {
+  .formulario {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .media__video {
+    width: 300px; } }
+
+@media (max-width: 768px) {
+  .card__content {
+    width: 300px;
+    font-size: 16px; }
+  .media__video {
+    display: none;
+    width: 50px;
+    height: 100px;
+    margin: 0px; } }
 
 .footer {
   background-image: linear-gradient(45deg, #c60606, black);
@@ -160,6 +206,11 @@ header {
 .footer__section-two {
   display: flex;
   justify-content: center; }
+
+@media (max-width: 768px) {
+  .footer__section-one {
+    display: grid;
+    grid-template-columns: 1fr; } }
 
 /*REDES SOCIALES*/
 .socials__grid-card {
@@ -204,6 +255,16 @@ header {
     border-radius: 30px; }
   .ubication__grid .ubication__content-text1 {
     font-weight: bold; }
+
+.ubication__content-text3, .ubication__content-text4, .ubication__content-text5 {
+  font-size: 24px;
+  font-style: italic; }
+
+.ubication__content-text4 {
+  color: firebrick; }
+
+.ubication__content-text5 {
+  color: green; }
 
 /**********/
 /* ingressar */
@@ -260,8 +321,22 @@ header {
     .user .user__content-form .user__form-text {
       font-size: 25px;
       margin: 5px; }
+    .user .user__content-form .user__form-link {
+      background-color: #462727;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 30px; }
 
 /*INFORMACION*/
-.text__content {
-  background-image: red;
-  padding: 3000px; }
+.text__content-paper {
+  font-size: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center; }
+
+.text__content-tittle {
+  font-size: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold; }

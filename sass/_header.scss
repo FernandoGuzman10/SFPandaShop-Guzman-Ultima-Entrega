@@ -35,5 +35,22 @@ header {
         }
 }
 
+/*MEDIAS QUERIES*/
 
+@media (max-width: 1024px) {
+    .content__search label {
+        display: none;
+    }
+    .header__content-tittle {
+        display: none;
+    }
 
+}
+@media (max-width: 768px) {
+    header {
+        display: flex;
+    }
+    .content__search--bar {
+        
+    }
+}
