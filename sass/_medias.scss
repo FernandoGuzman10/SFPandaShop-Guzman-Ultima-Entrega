@@ -17,10 +17,18 @@
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+    }   
+    /*redes sociales*/
+    .socials__grid-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
-    /*medias de redes sociales*/
-    .socials__card {
-        width: 100px;
+    /*ubicacion*/
+    .ubication__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
 
@@ -55,4 +63,10 @@
         height: 100px;
         margin: 0px;  
     }
+    /*redes sociales*/
+    .socials__card {
+        width: 300px;
+    }
+
+    
 }
