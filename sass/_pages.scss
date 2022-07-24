@@ -11,7 +11,7 @@
     background-color: rgb(112, 0, 0);
     color: white;
     padding: 20px;
-    width: 600px;
+    width: 550px;
     border-radius: 10px;
     box-shadow: 0 5px 200px -12px rgb(98, 3, 3);
     transition: transform 0.3s;
@@ -57,27 +57,26 @@
     .ubication__content-text1 {
     font-weight: bold;
     }
-}
 
-.ubication__content-text3 {
-    font-size: 24px;
-    font-style: italic;
+    .ubication__content-text3 {
+        font-size: 24px;
+        font-style: italic;
+    }
+    .ubication__content-text4 {
+        @extend .ubication__content-text3;
+        color: firebrick;
+    }
+    .ubication__content-text5 {
+        @extend .ubication__content-text3;
+        color: green;
+    }
 }
-.ubication__content-text4 {
-    @extend .ubication__content-text3;
-    color: firebrick;
-}
-.ubication__content-text5 {
-    @extend .ubication__content-text3;
-    color: green;
-}
-
 
 
 
 /**********/
 
-/* ingressar */
+/* ingresar */
 .login {
     background-image: linear-gradient(45deg, red, black);
     color: rgb(255, 255, 255);
@@ -132,7 +131,6 @@
             justify-items: center;
             font-size: 50px;
             padding-top: 30px;
-    
         }
         .user__content-form {
             margin: 100px;
