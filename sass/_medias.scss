@@ -4,26 +4,31 @@
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
     .main__animation-grid {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
     .main__grid-video {
         justify-items: center;
     }
+
     .formulario {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-    }   
+    }
+
     /*REDES SOCIALES*/
     .socials__grid-card {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-         
+
     }
+
     /*UBICACION*/
     .ubication__grid {
         display: grid;
@@ -34,21 +39,22 @@
 
 @media (max-width: 1024px) {
     header {
-        .content__search label {
-            display: none;
-        }
+
         .header__content-tittle {
             display: none;
         }
+
         .header__tittle-grid {
             display: flex;
             justify-content: center;
         }
     }
+
     .formulario {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .media__video {
         width: 300px;
     }
@@ -62,44 +68,53 @@
         color: rgb(255, 255, 255);
         padding: 30px;
 
-            .content__search--bar{
-                display: grid;
-                width: 200px;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-    
-            .content__navbar ul {
-                display: grid;
-                grid-template-columns: 1fr;
-                justify-items: center;
-            }
-            .header__tittle-grid {
-                display: flex;
-                justify-content: center;
-            }
-            .header__content-tittle {  
-                display: grid;
-                color: rgb(253, 253, 253);
-                font-size: 30px;
-            }
+        .content__search input {
+            padding: 10px;
+        }
+
+        .content__search--bar {
+            display: grid;
+            width: 200px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .content__navbar ul {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        .header__tittle-grid {
+            display: flex;
+            justify-content: center;
+        }
+
+        .header__content-tittle {
+            display: grid;
+            color: rgb(253, 253, 253);
+            font-size: 30px;
+        }
     }
+
     .card__content {
         width: 100%;
         font-size: 16px;
     }
+
     .media__video {
         display: none;
         width: 50px;
         height: 100px;
-        margin: 0px;  
+        margin: 0px;
     }
+
     /*REDES SOCIALES*/
     .socials__grid-card {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-    
+
         .socials__card {
             background-color: rgb(112, 0, 0);
             color: white;
@@ -108,25 +123,28 @@
             border-radius: 10px;
             box-shadow: 0 5px 200px -12px rgb(98, 3, 3);
             transition: transform 0.3s;
-        }    
+        }
     }
+
     /*UBICACION*/
     .ubication__grid {
         display: grid;
         grid-template-columns: 1fr;
-    
+
         .ubication__content {
             display: grid;
             justify-items: center;
-            padding: 30px 30px;
+            padding: 10px;
             background-color: rgb(112, 0, 0);
-            border-radius: 30px;
+            border-radius: 20px;
         }
+
         .ubication__content iframe {
             width: 400px;
             height: 400px;
         }
     }
+
     /*INGRESAR*/
     .login {
         background-image: linear-gradient(45deg, red, black);
@@ -136,19 +154,19 @@
         width: 100%;
         border-radius: 20px;
         box-shadow: 0 5px 200px -12px rgb(98, 3, 3);
-    
+
         .login__form-tittle {
             display: flex;
             justify-content: center;
             justify-items: center;
             font-size: 30px;
         }
-    
+
         .login__content-form {
             margin: 100px;
             display: grid;
             justify-items: center;
-    
+
             .login__form-item {
                 font-size: 16px;
                 margin: 5px;
@@ -156,14 +174,15 @@
             }
         }
     }
+
     /*****/
     /*CREAR USUARIO*/
     .user {
         width: 100%;
-    } 
+    }
 }
 
-@media (max-width: 425px){  
+@media (max-width: 425px) {
     header {
         display: grid;
         grid-template-columns: 1fr;
@@ -171,63 +190,73 @@
         color: rgb(255, 255, 255);
         padding: 30px;
 
-            .content__search--bar{
-                display: grid;
-                width: 200px;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-    
-            .content__navbar ul {
-                display: grid;
-                grid-template-columns: 1fr;
-                justify-items: center;
-            }
-            .header__tittle-grid {
-                display: flex;
-                justify-content: center;
-            }
-            .header__content-tittle {  
-                display: grid;
-                color: rgb(253, 253, 253);
-                font-size: 30px;
-            }
+        .content__search input {
+            padding: 10px;
+        }
+
+        .content__search--bar {
+            display: grid;
+            width: 200px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .content__navbar ul {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        .header__tittle-grid {
+            display: flex;
+            justify-content: center;
+        }
+
+        .header__content-tittle {
+            display: grid;
+            color: rgb(253, 253, 253);
+            font-size: 30px;
+        }
     }
+
     .main__animation {
         background-image: $colorPrincipal;
         padding: 50px 20px;
         margin-bottom: 100px;
         color: aliceblue;
         box-shadow: 0 25px 50px -12px rgb(98, 3, 3);
-    
-            &-grid {
-                display: grid;
-                grid-template-columns: 1fr;
-                align-items: center;
-            }
-            &-content h1 {
-                display: grid;
-                justify-content: center;
-                color: #d7d4d4;
-                font-size: 30px;
-                margin-bottom: 15px;
 
-            }
-    
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+        }
+
+        &-content h1 {
+            display: grid;
+            justify-content: center;
+            color: #d7d4d4;
+            font-size: 30px;
+            margin-bottom: 15px;
+
+        }
+
         .main__grid-video {
             width: 100%;
             border-radius: 15px;
             box-shadow: 0 25px 50px -15px white;
         }
-    }  
+    }
+
     .card__content {
         width: 100%;
         font-size: 16px;
     }
+
     .footer__section-one {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
         padding: 40px 0px;
         justify-items: center;
@@ -242,52 +271,61 @@
         .ubication__content {
             display: grid;
             justify-items: center;
+            padding: 0px;
         }
+
         .ubication__content iframe {
-            width: 200px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
         }
     }
+
     /********/
 
     /*INGRESAR*/
     .login {
         padding: 20px;
         width: 100%;
-    
+
         .login__form-tittle {
             display: flex;
             justify-content: center;
             justify-items: center;
             font-size: 30px;
         }
-    
+
         .login__content-form {
             display: grid;
             justify-items: center;
             margin: 0px;
+
             .login__form-item {
                 font-size: 16px;
                 width: 100%;
             }
         }
     }
+
     /********/
     /*CREAR USUARIO*/
     .user {
         width: 100%;
         margin: 0;
+
         .user__content-tittle {
             font-size: 20px;
         }
+
         .user__content-form {
             margin: 0px;
             width: 100%;
+
             .user__form-text {
                 font-size: 16px;
             }
-        }   
+        }
     }
+
     /********/
     /*INFORMACION*/
     .text__content p {

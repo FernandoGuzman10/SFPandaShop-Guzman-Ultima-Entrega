@@ -6,13 +6,13 @@
     padding: 20px;
 
     .socials__card {
-    background-color: rgb(112, 0, 0);
-    color: white;
-    padding: 20px;
-    width: 550px;
-    border-radius: 10px;
-    box-shadow: 0 5px 200px -12px rgb(98, 3, 3);
-    transition: transform 0.3s;
+        background-color: rgb(112, 0, 0);
+        color: white;
+        padding: 20px;
+        width: 550px;
+        border-radius: 10px;
+        box-shadow: 0 5px 200px -12px rgb(98, 3, 3);
+        transition: transform 0.3s;
 
         .socials__card-image {
             background-image: $coloBackground;
@@ -20,6 +20,7 @@
             border-radius: 10px;
             margin-bottom: 20px;
         }
+
         .socials__card-link {
             background-color: rgb(70, 39, 39);
             color: white;
@@ -28,12 +29,13 @@
             border-radius: 10px;
             padding: 15px;
             text-align: center;
-        }   
+        }
+
         .socials__card-link:hover {
             background-color: $buttomHover;
         }
     }
-    
+
 }
 
 /**********/
@@ -46,24 +48,27 @@
     padding: 80px 0;
 
     .ubication__content {
-    padding: 30px 30px;
-    background-color: rgb(112, 0, 0);
-    border-radius: 30px;
+        padding: 30px 30px;
+        background-color: rgb(112, 0, 0);
+        border-radius: 30px;
 
-    
+
     }
+
     .ubication__content-text1 {
-    font-weight: bold;
+        font-weight: bold;
     }
 
     .ubication__content-text3 {
         font-size: 24px;
         font-style: italic;
     }
+
     .ubication__content-text4 {
         @extend .ubication__content-text3;
         color: firebrick;
     }
+
     .ubication__content-text5 {
         @extend .ubication__content-text3;
         color: green;
@@ -85,32 +90,47 @@
     box-shadow: 0 5px 200px -12px rgb(98, 3, 3);
 
     .login__form-tittle {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    font-size: 50px;
-    padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        font-size: 50px;
+        padding-top: 30px;
     }
 
     .login__content-form {
         margin: 100px;
         display: grid;
         justify-items: center;
-    
-            .login__form-item {
+
+        .login__form-item {
             font-size: 25px;
             margin: 5px;
-            }
+        }
+    }
+
+    .login__content-form button {
+        background-color: rgb(82, 56, 56);
+        padding: 10px;
+        border-radius: 30px;
+        color: white;
+        border-style: none;
+    }
+
+    .login__content-form button:hover {
+        background-color: $buttomHover;
     }
 }
+
 .login__link {
     background-color: rgb(70, 39, 39);
     padding: 10px;
     border-radius: 30px;
 }
+
 .login__link:hover {
     background-color: $buttomHover;
 }
+
 /*******/
 
 /*CREAR USUARIO*/
@@ -123,33 +143,48 @@
     border-radius: 20px;
     box-shadow: 0 5px 200px -12px rgb(98, 3, 3);
 
-        .user__content-tittle {
-            display: flex;
-            justify-content: center;
-            justify-items: center;
-            font-size: 50px;
-            padding-top: 30px;
-        }
-        .user__content-form {
-            margin: 100px;
-            display: grid;
-            justify-items: center;
+    .user__content-tittle {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        font-size: 50px;
+        padding-top: 30px;
+    }
 
-                .user__form-text {
-                    font-size: 25px;
-                    margin: 5px;
-                }
-                .user__form-link {
-                    background-color: rgb(70, 39, 39);
-                    padding: 10px;
-                    margin: 10px;
-                    border-radius: 30px;
-                }
+    .user__content-form {
+        margin: 100px;
+        display: grid;
+        justify-items: center;
+
+        .user__form-text {
+            font-size: 25px;
+            margin: 5px;
         }
-        
+
+        .user__form-link {
+            background-color: rgb(70, 39, 39);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px;
+        }
+    }
+
+    .user__content-form button {
+        background-color: rgb(82, 56, 56);
+        padding: 10px;
+        border-radius: 30px;
+        color: white;
+        border-style: none;
+    }
+
+    .user__content-form button:hover {
+        background-color: $buttomHover;
+    }
+
 }
+
 /*INFORMACION*/
-@mixin text-base ($inline){
+@mixin text-base ($inline) {
     font-size: 30px;
     margin: 30px;
     display: flex;
@@ -159,8 +194,8 @@
 .text__content-paper {
     @include text-base (center);
 }
+
 .text__content-tittle {
     @include text-base(center);
     font-weight: bold;
 }
-

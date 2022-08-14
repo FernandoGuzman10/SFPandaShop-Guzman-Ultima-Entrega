@@ -13,6 +13,10 @@ body {
 ul {
   list-style-type: none; }
 
+h1 {
+  font-size: 30px;
+  display: flex; }
+
 a {
   text-decoration: none;
   color: white;
@@ -39,7 +43,8 @@ h3 {
 input {
   border-radius: 10px;
   height: 30px;
-  border-style: none; }
+  border-style: none;
+  padding: 10px; }
 
 textarea {
   border-radius: 10px;
@@ -51,6 +56,8 @@ header {
   background-image: linear-gradient(45deg, #c60606, black);
   color: white;
   padding: 30px; }
+  header .content__search input {
+    padding: 10px; }
   header .content__search--bar {
     background-color: white;
     color: #d7d4d4;
@@ -60,6 +67,8 @@ header {
   header .content__navbar li {
     margin: 0 15px;
     font-weight: lighter; }
+  header .content__navbar li:hover {
+    background-color: #6d3c3c; }
   header .content__navbar ul {
     display: flex; }
   header .header__content-tittle {
@@ -239,6 +248,14 @@ header {
     .login .login__content-form .login__form-item {
       font-size: 25px;
       margin: 5px; }
+  .login .login__content-form button {
+    background-color: #523838;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    border-style: none; }
+  .login .login__content-form button:hover {
+    background-color: #6d3c3c; }
 
 .login__link {
   background-color: #462727;
@@ -276,6 +293,14 @@ header {
       padding: 10px;
       margin: 10px;
       border-radius: 30px; }
+  .user .user__content-form button {
+    background-color: #523838;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    border-style: none; }
+  .user .user__content-form button:hover {
+    background-color: #6d3c3c; }
 
 /*INFORMACION*/
 .text__content-paper {
@@ -318,8 +343,6 @@ header {
     justify-items: center; } }
 
 @media (max-width: 1024px) {
-  header .content__search label {
-    display: none; }
   header .header__content-tittle {
     display: none; }
   header .header__tittle-grid {
@@ -338,11 +361,13 @@ header {
     background-image: linear-gradient(45deg, #c60606, black);
     color: white;
     padding: 30px; }
+    header .content__search input {
+      padding: 10px; }
     header .content__search--bar {
       display: grid;
       width: 200px;
       max-width: 1200px;
-      margin: 0 auto; }
+      margin: 20px auto; }
     header .content__navbar ul {
       display: grid;
       grid-template-columns: 1fr;
@@ -382,9 +407,9 @@ header {
     .ubication__grid .ubication__content {
       display: grid;
       justify-items: center;
-      padding: 30px 30px;
+      padding: 10px;
       background-color: #700000;
-      border-radius: 30px; }
+      border-radius: 20px; }
     .ubication__grid .ubication__content iframe {
       width: 400px;
       height: 400px; }
@@ -422,11 +447,13 @@ header {
     background-image: linear-gradient(45deg, #c60606, black);
     color: white;
     padding: 30px; }
+    header .content__search input {
+      padding: 10px; }
     header .content__search--bar {
       display: grid;
       width: 200px;
       max-width: 1200px;
-      margin: 0 auto; }
+      margin: 20px auto; }
     header .content__navbar ul {
       display: grid;
       grid-template-columns: 1fr;
@@ -475,10 +502,11 @@ header {
     grid-template-columns: 1fr; }
     .ubication__grid .ubication__content {
       display: grid;
-      justify-items: center; }
+      justify-items: center;
+      padding: 0px; }
     .ubication__grid .ubication__content iframe {
-      width: 200px;
-      height: 200px; }
+      width: 220px;
+      height: 220px; }
   /********/
   /*INGRESAR*/
   .login {
