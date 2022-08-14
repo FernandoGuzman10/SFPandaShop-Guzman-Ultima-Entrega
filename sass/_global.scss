@@ -10,20 +10,24 @@ body {
     position: relative;
 
 }
+
 /* FORMATOS DE TEXTO */
 ul {
     list-style-type: none;
 }
+
 h1 {
     font-size: 30px;
     display: flex;
 }
+
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
- p {
+
+p {
     line-height: 1.8;
     margin: 20px;
     text-align: justify;
@@ -51,10 +55,8 @@ input {
     border-style: none;
     padding: 10px;
 }
+
 textarea {
     border-radius: 10px;
     border-style: none;
 }
-
-
-

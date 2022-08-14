@@ -1,5 +1,5 @@
 .footer {
-    background-image: map-get($map: $colores, $key: colorPrincipal );
+    background-image: map-get($map: $colores, $key: colorPrincipal);
     color: rgb(255, 255, 255);
     width: 100%;
     padding: 10px;
@@ -9,12 +9,13 @@
 .footer__section-one {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     padding: 40px 0px;
     justify-items: center;
     align-items: center;
 }
+
 .footer__section-one img {
     height: 150px;
     border-radius: 25%;
